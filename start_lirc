@@ -1,0 +1,2 @@
+sudo /etc/init.d/lirc start
+irexec -d /home/pi/.lircrc

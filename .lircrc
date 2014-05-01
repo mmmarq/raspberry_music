@@ -1,0 +1,283 @@
+begin
+	remote = DVRRemote
+	button = KEY_A
+	prog = irexec
+	repeat = 0
+	config = irsend SEND_ONCE DVRRemote KEY_A
+end
+begin
+        remote = DVRRemote
+        button = KEY_B
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_B
+end
+begin
+        remote = DVRRemote
+        button = KEY_C
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_C
+end
+begin
+        remote = DVRRemote
+        button = KEY_D
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_D
+end
+begin
+        remote = DVRRemote
+        button = KEY_E
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_E
+end
+begin
+        remote = DVRRemote
+        button = KEY_F
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_F
+end
+begin
+        remote = DVRRemote
+        button = KEY_G
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_G
+end
+begin
+        remote = DVRRemote
+        button = KEY_H
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_H
+end
+begin
+        remote = DVRRemote
+        button = KEY_I
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_I
+end
+begin
+        remote = DVRRemote
+        button = KEY_J
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_J
+end
+begin
+        remote = DVRRemote
+        button = KEY_K
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_K
+end
+begin
+        remote = DVRRemote
+        button = KEY_L
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_L
+end
+begin
+        remote = DVRRemote
+        button = KEY_M
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_M
+end
+begin
+        remote = DVRRemote
+        button = KEY_N
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_N
+end
+begin
+        remote = DVRRemote
+        button = KEY_O
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_O
+end
+begin
+        remote = DVRRemote
+        button = KEY_P
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_P
+end
+begin
+        remote = DVRRemote
+        button = KEY_Q
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_Q
+end
+begin
+        remote = DVRRemote
+        button = KEY_R
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_R
+end
+begin
+        remote = DVRRemote
+        button = KEY_1
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_1
+end
+begin
+        remote = DVRRemote
+        button = KEY_2
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_2
+end
+begin
+        remote = DVRRemote
+        button = KEY_3
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_3
+end
+begin
+        remote = DVRRemote
+        button = KEY_4
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_4
+end
+begin
+        remote = DVRRemote
+        button = KEY_5
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_5
+end
+begin
+        remote = DVRRemote
+        button = KEY_6
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_6
+end
+begin
+        remote = DVRRemote
+        button = KEY_7
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_7
+end
+begin
+        remote = DVRRemote
+        button = KEY_8
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_8
+end
+begin
+        remote = DVRRemote
+        button = KEY_9
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_9
+end
+begin
+        remote = DVRRemote
+        button = KEY_0
+        prog = irexec
+        repeat = 0
+        config = irsend SEND_ONCE DVRRemote KEY_0
+end
+
+#begin
+#        remote = DVRRemote
+#        button = KEY_C
+#        prog = irexec
+#        repeat = 0
+#        config = gpio -g write 24 0
+#end
+
+begin
+        remote = AudioRemote
+        button = KEY_POWER
+        prog = irexec
+        repeat = 0
+        config = echo "Key Power" >> /home/pi/test.txt
+end
+begin
+        remote = AudioRemote
+        button = KEY_VOLUMEUP
+        prog = irexec
+        repeat = 0
+        config = echo "Key Volume Up" >> /home/pi/test.txt
+end
+begin
+        remote = AudioRemote
+        button = KEY_VOLUMEDOWN
+        prog = irexec
+        repeat = 0
+        config = echo "Key Volume Down" >> /home/pi/test.txt
+end
+begin
+        remote = AudioRemote
+        button = KEY_CHANNELUP
+        prog = irexec
+        repeat = 0
+        config = echo "Key Channel Up" >> /home/pi/test.txt
+end
+begin
+        remote = AudioRemote
+        button = KEY_CHANNELDOWN
+        prog = irexec
+        repeat = 0
+        config = echo "Key Channel Down" >> /home/pi/test.txt
+end
+begin
+        remote = AudioRemote
+        button = KEY_A
+        prog = irexec
+        repeat = 0
+        config = echo "Key A" >> /home/pi/test.txt
+end
+begin
+        remote = AudioRemote
+        button = KEY_B
+        prog = irexec
+        repeat = 0
+        config = echo "Key B" >> /home/pi/test.txt
+end
+begin
+        remote = AudioRemote
+        button = KEY_C
+        prog = irexec
+        repeat = 0
+        config = echo "Key C" >> /home/pi/test.txt
+end
+begin
+        remote = AudioRemote
+        button = KEY_D
+        prog = irexec
+        repeat = 0
+        config = echo "Key D" >> /home/pi/test.txt
+end
+begin
+        remote = AudioRemote
+        button = KEY_E
+        prog = irexec
+        repeat = 0
+        config = echo "Key E" >> /home/pi/test.txt
+end
+begin
+        remote = AudioRemote
+        button = KEY_F
+        prog = irexec
+        repeat = 0
+        config = echo "Key F" >> /home/pi/test.txt
+end
+
