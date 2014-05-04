@@ -9,3 +9,7 @@ gpio -g write 24 1
 irsend SEND_ONCE DVRRemote KEY_C
 
 sudo i2cdetect -y 1
+
+sudo /etc/init.d/lirc stop
+sudo mode2 -d /dev/lirc0
+sudo /etc/init.d/lirc start
