@@ -27,3 +27,26 @@ sudo i2cdetect -y 1
 sudo /etc/init.d/lirc stop
 sudo mode2 -d /dev/lirc0
 sudo /etc/init.d/lirc start
+
+
+
+# RPI TTS
+
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install alsa-utils
+
+sudo apt-get install mplayer
+
+sudo nano /etc/mplayer/mplayer.conf
+and add
+nolirc=yes
+
+#MAXIMO 100 CHARS
+
+http://translate.google.com/translate_tts?tl=en&q=Officials%20say%20the%20National%20Security%20Agency%20is%20free%20to%20spy%20on%20foreign%20trade%20negotiators%20to%20help%20Ameri" --user-agent "Mozilla/5.0" -o out.audio
+
+/usr/bin/mplayer -ao alsa -really-quiet -noconsolecontrols out.audio
+
+
