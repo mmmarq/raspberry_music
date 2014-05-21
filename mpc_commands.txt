@@ -1,3 +1,17 @@
+# MPD - http://miro.oorganica.com/raspberry-pi-mpd/
+
+sudo /etc/init.d/mpd stop
+sudo /etc/init.d/mpd start
+#or
+sudo /etc/init.d/mpd restart
+
+mpc update
+
+#Para Streaming
+sudo apt-get install libavcodec-extra-53
+apt-get install libav-tools
+
+
 amixer cset numid=3 1
 mpc listall | grep The_XX | mpc add
 mpc play
