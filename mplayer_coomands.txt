@@ -1,0 +1,17 @@
+# Create pipe to make mplayer receive commands in slave mode
+
+mkfifo /tmp/pipe
+
+# Start mplayer in slave mode
+
+mplayer -vo null -ao alsa -playlist /home/pi/music/HelensFaves.txt -slave -input file=/tmp/pipe -quiet -loop 0 > /tmp/mlog.txt"
+
+# send command to pipe
+
+echo "pt_step 1" > /tmp/pipe
+
+# command list
+
+http://www.mplayerhq.hu/DOCS/tech/slave.txt
+
+
